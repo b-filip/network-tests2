@@ -39,17 +39,17 @@ FORMS += GUI/mainwindow.ui \
 		 GUI/tabviewer.ui \
 		 GUI/matrixviewer.ui \
 		 GUI/topoviewer.ui
-INCLUDEPATH += /usr/include/qwt-qt4
-DEPENDPATH += /usr/include/qwt-qt4
+INCLUDEPATH += /usr/include/qwt5
+DEPENDPATH += /usr/include/qwt5
 LIBS += -L/usr/lib \
-		-lqwt-qt4 \
+		-lqwt5 \
 		-lnetcdf \
 		-lGLU
 RESOURCES += resources.qrc
 TRANSLATIONS = translations/nv_tr_ru.ts
 
 # ------------------------------------------
-# If these two variables are not empty in 
+# If these two variables are not empty in
 # '../../config', add new files and folders
 # ------------------------------------------
 OPENCL_LIB_FLD:OPENCL_INCL {
