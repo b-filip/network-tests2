@@ -312,4 +312,4 @@ run: ${NETWORK_TESTS2_INSTALLED}
 	cd ${RUN_DIR} && \
 	  PATH="${PREFIX}/bin:${PATH}" MANPATH="${PREFIX}/share/man:${MANPATH}" \
 	    LD_LIBRARY_PATH="${PREFIX}/lib:${LD_LIBRARY_PATH}" \
-	    sbatch -n ${NUM_NODES} --ntasks-per-node 1 ompi ${PREFIX}/bin/network_test2
+	    sbatch --ntasks=${NUM_NODES} --ntasks-per-node 1 ompi ${PREFIX}/bin/network_test2
